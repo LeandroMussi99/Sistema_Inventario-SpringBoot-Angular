@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="container text-center" style="margin: 30px">
+    <h3>Inventario</h3>
+  </div>
+
+  <table class="table table-striped table-hover aling-middle">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Descripción del Producto</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Existencia</th>
+        <th scope="col" class="text-center">Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (producto of productos; track producto.idProductos) {
+      <tr>
+        <th scope="row">{{producto.idProductos}}</th>
+        <td>{{producto.descripcion}}</td>
+        <td>{{producto.precio}}</td>
+        <td>{{producto.existencia}}</td>
+        <td class="text-center">
+          <div>
+            <button (click)="editarProducto(producto.idProductos)" 
+            class="btn btn-warning btn-sm me-3">Editar</button>
+            <button (click)="eliminarProducto(producto.idProductos)" 
+            class="btn btn-danger btn-sm">Eliminar</button>
+          </div>
+        </td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>
