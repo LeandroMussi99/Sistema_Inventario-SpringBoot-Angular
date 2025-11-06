@@ -75,7 +75,7 @@ Sistema_Inventario-SpringBoot-Angular/
 | `DELETE` | `/inventario-app/productos/{id}` | Elimina un producto por ID      |
 
 
-##💻 Configuración del Frontend (inventario-app/)
+## 💻 Configuración del Frontend (inventario-app/)
 
 1. Instalar dependencias:
     cd inventario-app
@@ -95,7 +95,7 @@ El frontend se ejecutará en: http://localhost:4200/
     - Editar o eliminar productos existentes.
 
 
-##🧠 Descripción de Componentes
+## 🧠 Descripción de Componentes
 
 🔹 Backend (Spring Boot)
 
